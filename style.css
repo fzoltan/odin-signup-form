@@ -1,61 +1,161 @@
-@font-face {
-    font-family: "Norse Bold";
-    src: url("font/Norse-Bold.otf") format("opentype");
-  }
-  
-  body {
-    font-family: "Norse Bold", sans-serif;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    height: 100vh;
+  @font-face {
+      font-family: "Norse Bold";
+      src: url("font/Norse-Bold.otf") format("opentype");
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .left-side {
+      font-family: "Norse Bold", sans-serif;
+      background-image: url("img/airplane.jpg");
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      flex: 1 1 33%;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+
+    .odin-logo-container {
+      width: 100%;
+      margin: 20vh 0;
+    }
+
+    .odin-logo {
+      background-color: rgba(0, 0, 0, 0.3);
+      color: white;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .odin-logo-img {
+      height: 100px;
+    }
+
+    .odin-header {
+      font-size: 75px;
+      margin: 0 0 0 10px;
+    }
+
+    .credit-footer {
+      align-items: flex-end;
+      color: black;
+    }
+
+    .left-side a {
+      color: black;
+    }
+
+    .right-side {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex: 1 1 67%;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+  .form-section {
+    background-color: white;
+    margin: 0 100px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 1px 50px 5px;
+    margin-bottom: 25px;
+    padding: 50px 100px;
   }
 
-  .left-side {
-    background-image: url("img/airplane.jpg");
-    background-position: center;
-    background-size: cover;
-    flex-basis: 33%;
+  .description-1, .description-2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0 100px;
+  }
+
+  .description-1 {
+    margin-bottom: 25px;
+  }
+
+  .description-2 {
+    margin-bottom: 50px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .input {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 35%;
   }
 
-  .odin-logo-container {
+  input {
     width: 100%;
-    margin: 20vh 0;
+    border: solid 2px #E5E7EB;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 5px;
   }
 
-  .odin-logo {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  input:focus {
+    outline: none;
+    border: solid 3px lightskyblue;
+    box-shadow: 0px 0px 5px 2px lightskyblue;
   }
 
-  .odin-logo-img {
-    height: 100px;
+  
+  input:not(:empty):invalid {
+    outline: none;
+    border: solid 3px red;
+    box-shadow: 0px 0px 5px 2px red;
   }
 
-  .odin-header {
-    font-size: 75px;
-    margin: 0 0 0 10px;
+  label {
+    font-size: 1rem;
   }
 
-  .credit-footer {
-    align-items: flex-end;
-    color: black;
+  .below-form {
+    padding: 0 100px;
+    margin-left: 100px;
+    font-size: 1.25rem;
   }
 
-  .right-side {
-    flex-basis: 67%;
-    background-color: lightgrey;
+  button {
+    padding: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: lightskyblue;
+    border-radius: 10px;
   }
 
- .left-side a {
-  color: black;
- }
+  .below-form a {
+    color: blue;
+    text-decoration: none;
+  }

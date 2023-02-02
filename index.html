@@ -8,19 +8,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="left-side">
-        <div class="odin-logo-container">
-            <div class="odin-logo">
-                <img src="img/odin-lined.png" alt="Odin Logo" class="odin-logo-img"><h1 class="odin-header">ODIN</h1>
+    <div class="container">
+        <div class="left-side">
+            <div class="odin-logo-container">
+                <div class="odin-logo">
+                    <img src="img/odin-lined.png" alt="Odin Logo" class="odin-logo-img">
+                    <h1 class="odin-header">ODIN</h1>
+                </div>
             </div>
+            <p class="credit-footer">Photo by <a href="https://unsplash.com/@natallmighty">Natali Quijano</a> on <a href="https://unsplash.com/photos/N79MYsd2Ce4">Unsplash</a></p>
         </div>
-        <p class="credit-footer">Photo by <a href="https://unsplash.com/@natallmighty">Natali Quijano</a> on <a href="https://unsplash.com/photos/N79MYsd2Ce4">Unsplash</a></p>
-    </div>
-    <div class="right-side">
-        <div class="description">
-            <p class="description-1">This is not a real online service! You know you need something like this in your life to help you realize
-                your deepest dreams. Sign up now to get started. Start your pilot carreer right now!</p>
+        <div class="right-side">
+            <div class="description">
+                <p class="description-1">This is not a real online service! You know you need something like this in your life to help you realize
+                    your deepest dreams. Sign up now to get started. Start your pilot career right now!</p>
                 <p class="description-2">You know you want to.</p>
+            </div>
+            <div class="form-section">
+                <form action="post" id="signup-form">
+                    <div class="input">
+                        <label for="first_name">FIRST NAME (*)</label>
+                        <input type="text" name="first_name" id="first_name" required>
+                    </div>
+                    <div class="input">
+                        <label for="last_name">LAST NAME (*)</label>
+                        <input type="text" name="last_name" id="last_name" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">EMAIL (*)</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="input">
+                        <label for="password">PASSWORD (*)</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="input">
+                        <label for="confirm-password">CONFIRM PASSWORD (*)</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                </form>
+            </div>
+            <div class="below-form">
+                <button type="submit" form="signup-form">Create account</button>
+                <p class="login-text">Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
