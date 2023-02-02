@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("font/Norse-Bold.otf") format("opentype");
+  }
+  
+  body {
+    font-family: "Norse Bold", sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .left-side {
+    background-image: url("img/airplane.jpg");
+    background-position: center;
+    background-size: cover;
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .odin-logo-container {
+    width: 100%;
+    margin: 20vh 0;
+  }
+
+  .odin-logo {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .odin-logo-img {
+    height: 100px;
+  }
+
+  .odin-header {
+    font-size: 75px;
+    margin: 0 0 0 10px;
+  }
+
+  .credit-footer {
+    align-items: flex-end;
+    color: black;
+  }
+
+  .right-side {
+    flex-basis: 67%;
+    background-color: lightgrey;
+  }
+
+ .left-side a {
+  color: black;
+ }
